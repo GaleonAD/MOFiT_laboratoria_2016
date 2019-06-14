@@ -1,0 +1,10 @@
+set term png
+set out 'PRST3.png'
+set multiplot 
+set logscale x
+set yrange [0:0.3]
+set xrange [0.0001:0.15]
+set ytics nomirror
+set ylabel 'Błąd'
+set xlabel 'Wielkość kroku h'
+plot '../data/PRST.dat' u (sqrt(2/$1)):4 w l t '', 0.01

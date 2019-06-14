@@ -1,0 +1,9 @@
+set term png
+set out 'ERR5.png'
+#set multiplot 
+#set logscale x
+#set logscale y
+set ytics nomirror
+set ylabel 'Średni błąd w N losowaniach'
+set xlabel 'N^{-1/2}'
+plot 'data_sr' u (1/sqrt($1)):2 w p t ''

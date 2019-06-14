@@ -1,0 +1,8 @@
+set term png
+set out 'MC2.png'
+set multiplot 
+set logscale x
+set ytics nomirror
+set ylabel 'Błąd'
+set xlabel 'Ilość losowań N'
+plot '../data/MC.dat' u 1:4 w l t '', 0.01

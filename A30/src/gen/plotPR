@@ -1,0 +1,8 @@
+set term png
+set out 'PRST2.png'
+set multiplot 
+set logscale x
+set ytics nomirror
+set ylabel 'Błąd'
+set xlabel 'Ilość kwadratów podziału N'
+plot '../data/PRST.dat' u 1:4 w l t '', 0.01

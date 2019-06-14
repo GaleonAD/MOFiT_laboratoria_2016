@@ -1,0 +1,3 @@
+import fun
+
+fun.Play()

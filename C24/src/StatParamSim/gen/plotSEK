@@ -1,0 +1,11 @@
+set term png
+set out 'Magn.png'
+set multiplot 
+set xrange [1:999]
+set logscale x
+set ytics nomirror
+set ylabel 'Magnetyzacja'
+set xlabel 'Ilość kroków dla przeglądania sekwencyjnego'
+#plot '../data/output.magnet' u 1:2 w l t ''
+plot '../data/Magn_ferr_SEK.dat' u 1:2 w l t 'ferromagnetyk' \
+, '../data/Magn_anty_SEK.dat' u 1:2 w l t 'antyferromagnetyk'
